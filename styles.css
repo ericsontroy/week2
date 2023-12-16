@@ -1,0 +1,276 @@
+/* this is my stylesheet and I went kind of wild with a bunch of different 
+element properties, I explored a bunch of different values to utlize and even stumbled 
+acrossed some small victories that made me feel excellent. I hope you all enjoy the best attempt 
+i could give at my 1st css style sheet. */
+
+/* I had a couple goals when doing this little assignment, I wanted to leave it simple but visually grabbing to a users
+eyesight, I incorperated quite few different hover and backgorund color changess to keep the user "into" the page.
+I attempted to use primary colors and simple tones, besides the backgrounds, I went for FLASHY! well tried too anyway */
+
+html{
+    background-color: rgb(3, 42, 169); 
+    text-align: center;
+    color: brown;
+  
+   
+}
+/* these properties are a lot of trial and error with me, i wanted to practice different styling to 
+bring attention to the user and do it in some flashy ways. Even though i am sure on a professional scale these are
+very beginner but it was fun to crash course a bunch of new properties */
+
+a {
+    text-decoration: none;
+    font-size: larger;
+    font-weight: bold;
+    border: 1px solid black;
+    color: rgb(0, 110, 255);
+}
+
+a:hover{
+    color: rgb(8, 8, 8);
+} /* just to show the user where they are on the anchors */
+
+body{
+    
+    background-color: beige;
+    border: 50px;
+    border-left: 10px solid green;
+    height: fit-content;
+    border-right: 10px solid #ff0000;
+    border-bottom: 10px solid yellow; /* I found a bunch of random things to expiriment with, I really liked how
+    the lines around the page bring focus to the user */
+    border-top: 10px solid yellow;
+    
+
+}
+/* text-decoration was another one of the small victories earlier on in 
+the styling, i didnt like the line under the links and this looks much cleaner 
+but in the heading i ended up adding some underline to show some emphasis  */
+
+
+h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: oblique;
+    text-shadow: px 2px 4px #000000;
+    text-decoration: underline;
+}
+
+h2 {
+    font-size: larger;
+    font-weight: bolder;
+}
+
+h3 {
+    font-size: xx-large;
+    font-weight: bolder;
+
+}
+/* this is a comment showing a found how to use the element mix-blend, and it is so satisfying. 
+I originally found what i needed with a css reset, however i attempted to add to the reset after starting
+ to style the css originally, i learned for next time. */
+img{
+    mix-blend-mode: multiply;
+    image-rendering: auto;
+    height: auto;
+    max-width: auto;
+   
+}
+    
+
+
+
+ul, li {
+    
+  border: .25px solid black;
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+/* these are some of the flashy attempts in styling and although it is not quite what i invisioned. 
+they still turned out fun and bring some attention to the user */
+
+
+table {
+    background-color: aqua;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+
+}
+
+table th {
+    justify-content: center;
+    border: 2px solid black;
+    font-size: larger;
+}
+
+th {
+    font-size: larger;
+    text-decoration-line: underline;
+
+}
+
+form {
+    border: 5px solid black;
+    
+    color: rgb(0, 0, 0);
+   background-size: 50px;
+   padding: 2px;
+   margin: 3rem;
+   font-size: x-large;
+   
+
+}
+
+form:hover {
+    background-color: rgb(20, 220, 60); /* i thought this was cool cause it layers on the background nicely */
+
+    
+}
+
+form h3 {
+    text-decoration: underline;
+
+}
+
+footer {
+    font-weight: bold;
+    background-color: azure;
+}
+
+
+/*this my special classes,some pseudo classes, and IDs for specfic elements */
+.page-heading {
+    justify-content: center;
+}
+    
+
+.page-heading a {
+    display:block;
+    background-color: lightblue;
+    border: 3px solid;
+    border-radius: 30px;
+    height: 20px;
+    padding: 10px;
+    margin: .05rem;
+    font-size: larger;
+    align-content: center;
+    text-shadow: 5px 8px 10px #ff0000;
+    
+}
+    
+
+.list{
+    font-size: larger;
+    content: 1rem;
+    padding: 50px;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 10rem;
+   
+}
+
+.list h3 {
+    text-decoration: underline;
+}
+
+.list:hover li{
+    background-color: rgb(238, 255, 0);
+}
+
+.prices {
+   
+    padding: 75px;
+    font-size: larger;
+    font-stretch: expanded; /* I was having trouble making this table the way I had invisioned it. I landed on what
+    is seen after quite a bit of trial and error, but im sure there is more i could do to improve it for later projects */
+    font-weight: bolder;
+   
+
+}
+  
+   
+/* in an attempt to help my pricing table, i found so many better ways to start for future projects, 
+this is a super simple display showing fake prices of paintballs to play */
+
+/* I bet your asking why these pseudo classes are in a comment, after messing and tweaking with styles,
+I had a hunch  to make these a comment to see what came on on the display and ironically enough, after making 
+the classes as a comment, the page looked more like would want it */
+
+/* .prices table {
+    display: flex;
+   font-style: italic;
+   font-size: larger;
+   margin: 50px;
+   text-align: center;
+   border: 1px solid black;
+   border-collapse: collapse;
+
+}
+
+.prices tr td th tbody {
+    border: 1px solid black;
+    text-align: center;
+    text-size-adjust: 10px;
+
+}
+*/
+#formedit {
+    font-size: large;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    padding: 5rem;
+}
+
+#listhead {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+#flexbox{
+    content: normal;
+    padding: 50px;
+    border: 5px solid black;
+    margin: 10rem;
+    list-style-type: square;
+} /* just an attempt to bring attention to different parts of the page using an ID */
+
+#flexbox:hover{
+    background-color: rgb(0, 255, 234);
+
+}
+
+
+/* this next part was nice to learn how to resize images in css, I would think as always there is way more to know */
+#nxl {
+    width: 50rem;
+    image-rendering: auto;
+}
+
+#checkmark {
+    width: 20rem;
+    image-rendering: optimizeQuality;
+    margin: none;
+   
+}
+
+#arrows {
+    width: 30rem;
+}
+
+/* Media Queries */
+@media screen and (max-device-width: 480px) 
+    and (orientation: portrait) {
+
+    }
+
+
+
+
+
+
+
+
+   
+   
